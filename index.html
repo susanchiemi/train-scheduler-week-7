@@ -1,0 +1,74 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+     <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="jumbotron">
+  <h1 class="text-center">Anytime Is Train Time</h1><br>
+   <h4 class="text-center">I think I can, I think I can, I think I can . . . choo choo</h4>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Current Train Schedule</div>
+
+    
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Train Name</th>
+        <th>Destination</th>
+        <th>Frequency (mins)</th>
+        <th>Next Arrival</th>
+        <th>Minutes Away</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Add Train</div>
+<form action="/action_page.php">
+    <div class="form-group col-sm-12">       
+      <label for="name">Train Name</label>
+      <input type="text" class="form-control" >
+    </div>
+
+    <div class="form-group col-sm-12">
+      <label for="name">Destination</label>
+      <input type="text" class="form-control" >
+    </div>
+    <div class="form-group col-sm-12">
+      <label for="name">First Train Time</label>
+      <input type="text" class="form-control" >
+    </div>
+
+    <div class="form-group col-sm-12">
+      <label for="name">Frequency</label>
+      <input type="text" class="form-control" >
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!--link to Javascript -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>

@@ -4,8 +4,17 @@
     border-color: #FFFFFF;
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: brown;
+    border-color: #fff;
+}
 .jumbotron {
     background-color: brown;
     color: #ffffff;
+}
+
+.btn {
+    margin: 10px;
 }
 

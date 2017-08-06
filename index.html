@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Train Scheduler</title>
-     <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-
-<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-
-
-
-
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <!--Momement.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 </head>
+
 <body>
     <div class="container">
     <div class="jumbotron">
-  <h1 class="text-center">Anytime Is Train Time</h1><br>
+    <h1 class="text-center">Anytime Is Train Time</h1><br>
    <h4 class="text-center">I think I can, I think I can, I think I can . . . choo choo</h4>
 </div>
 
@@ -46,29 +44,27 @@
 
 <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading">Add Train</div>
-<form action="/action_page.php">
+  <div class="panel-heading">ADD TRAIN</div>
+  <form action="/action_page.php">
     <div class="form-group col-sm-12">       
       <label for="name">Train Name</label>
-      <input type="text" class="form-control" >
+      <input type="text" class="form-control" id="trainNameInput">
     </div>
 
     <div class="form-group col-sm-12">
       <label for="name">Destination</label>
-      <input type="text" class="form-control" >
+      <input type="text" class="form-control" id="destinationInput" >
     </div>
     <div class="form-group col-sm-12">
       <label for="name">First Train Time (HH:mm - Military Time)</label>
-      <input type="text" class="form-control" >
+      <input type="text" class="form-control" id="firstTrainInput" >
     </div>
 
     <div class="form-group col-sm-12">
       <label for="name">Frequency</label>
-      <input type="text" class="form-control" >
+      <input type="text" class="form-control" id="frequencyInput" >
     </div>
-
-
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" id="addTrainBtn">Submit</button>
   </form>
 </div>
 
